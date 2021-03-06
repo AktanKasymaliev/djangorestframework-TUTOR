@@ -5,7 +5,7 @@ from rest_framework import generics
 
 class SnippetList(generics.ListCreateAPIView):
     queryset = Snippet.objects.all()
-    serializer_class = SnippetSerializer
+    serializer_class = SnippetSe    rializer
 
 
 class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
